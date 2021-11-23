@@ -23,3 +23,9 @@
 
   + [FastAPI Github Repository](https://github.com/tiangolo/fastapi)
     > Official Github repo for FastAPI
+
+  + [Suggested Folder Structure](https://stackoverflow.com/questions/64943693/what-are-the-best-practices-for-structuring-a-fastapi-project)
+    > Structure of project folder for easy maintenance
+
+  + [Best FastAPI Tutorial for me](https://christophergs.com/tutorials/ultimate-fastapi-tutorial-pt-1-hello-world/)
+    > From beginner to advanced tutorials with examples
