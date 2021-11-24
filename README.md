@@ -2,7 +2,11 @@
 
 ## Final Project Work
 
+Chatterbot requirements > 3.8
 
+
+install 3.8
+switch default to 3.8
 
 ### Valuable Resources
 + Source Control
