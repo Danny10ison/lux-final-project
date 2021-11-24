@@ -1,2 +1,5 @@
 # ignore vitrual environment
 env/
+
+# ignore v1 folder
+v1/
