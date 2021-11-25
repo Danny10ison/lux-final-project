@@ -12,7 +12,6 @@ templates = Jinja2Templates(directory="core/templates/")
 app.mount("/core/static", StaticFiles(directory="core/static/"), name="static" )
 
 
-
 @app.get("/")
 async def get_root():
     return {"Hello": "World"}
