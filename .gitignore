@@ -3,3 +3,14 @@ env/
 
 # ignore v1 folder
 v1/
+
+# vscode settings
+.vscode
+
+# 
+hmm/
+
+#
+test/
+
+chatbot/__pycache__
