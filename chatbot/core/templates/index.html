@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Chat Bot UI/UX & html for web, UI/UX for chat bot, chat bot html, best chatbot, chatbot app, online chat bot plugin" />
+  <meta name="author" content="dannyose" />
+  <title>Product Assistant Chatbot</title>
+  <meta name="description" content="Chat Bot UI/UX & html for web, UI/UX for chat bot, chat bot html, best chatbot, chatbot app, online chat bot plugin | Css3Transition " />
+  <meta name="abstract" content="Chat Bot UI/UX & html for web, UI/UX for chat bot, chat bot html, best chatbot, chatbot app, online chat bot plugin">
+  <meta name="technologies" content="HTML, HTML5, CSS, CSS3,">
+  <meta name="distribution" content="Global">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="city" content="Accra">
+  <meta name="country" content="Ghana">
+
+  <link rel="shortcut icon" href="{{ url_for('static', path='/img/favicon.ico') }}" type="image/x-icon">
+  <link rel="stylesheet" href="{{ url_for('static', path='/css/main.css') }}">
     
-    <link rel="stylesheet" href="{{ url_for('static', path='/css/main.css') }}">
-    <title>Chatbot - Brave Coder</title>
 </head>
 <body>
     <div class="wrapper">
-        <div class="title">Simple Chatbot</div>
+        <div class="title">Product Assistant Chatbot</div>
         <div class="box">
             <div class="item">
                 <div class="icon">
                     <i class="fa fa-user"></i>
                 </div>
                 <div class="msg">
-                    <p>Hello everyone, How are you?</p> <!--Bot has to talk here-->
+                    <p>BOT: Hello </p> <!--Bot has to talk here-->
                 </div>
             </div>
             <br clear="both">
             <div class="item right">
                 <div class="msg">
-                    <p>Nice</p>
+                    <p>Nice</p> <!--Human interaction-->
                 </div>
             </div>
         </div>
@@ -34,16 +46,6 @@
                 <button type="submit" >Send</button>
             </div>
         </form>
-
-        <!--
-            <div class="typing-area">
-            <div class="input-field">
-                <input type="text" name="message" placeholder="Type your message" required>
-                <button type="submit" >Send</button>
-            </div>
-            </div>
-        -->
-        
     </div>
 </body>
 </html>
