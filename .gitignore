@@ -14,3 +14,7 @@ hmm/
 test/
 
 chatbot/__pycache__
+chatbot/core/__pycache__
+chatbot/core/schemas/__pycache__
+
+*.txt

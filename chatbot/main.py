@@ -4,7 +4,7 @@ from fastapi import FastAPI, Request, Form, Depends
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-# from models import MyForm
+from core.schemas.schema import UserConvo
 
 app = FastAPI(
     title="Chatbot API - Product Chat Assis",
@@ -23,4 +23,10 @@ async def get_assistant(request: Request):
        
        Display bot UI
     '''
+    return templates.TemplateResponse("index.html", {"request": request})
+
+@app.post('/home', response_class=HTMLResponse)
+async def get_user_message(request: Request, message: str = Form(...)):
+    '''Is able to print user message in server'''
+    print(f"message: {message}")
     return templates.TemplateResponse("index.html", {"request": request})
