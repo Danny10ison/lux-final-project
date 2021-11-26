@@ -6,16 +6,21 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 # from models import MyForm
 
-app = FastAPI()
+app = FastAPI(
+    title="Chatbot API - Product Chat Assis",
+    description="A simple API that helps you when you have a problem with a product from a company, eg.TV from samsung ",
+    version="0.1",
+)
 
 templates = Jinja2Templates(directory="core/templates/")
 app.mount("/core/static", StaticFiles(directory="core/static/"), name="static" )
 
 
-@app.get("/")
-async def get_root():
-    return {"Hello": "World"}
 
 @app.get('/home', response_class=HTMLResponse)
-async def get_form(request: Request):
+async def get_assistant(request: Request):
+    '''Get Assisstant
+       
+       Display bot UI
+    '''
     return templates.TemplateResponse("index.html", {"request": request})
