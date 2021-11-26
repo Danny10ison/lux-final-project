@@ -1,10 +1,11 @@
-# documentation
+'''Run the app
+
+'''
 
 from fastapi import FastAPI, Request, Form, Depends
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-from core.schemas.schema import UserConvo
 
 app = FastAPI(
     title="Chatbot API - Product Chat Assis",
